@@ -1,2 +1,20 @@
 
 /* Your CSS Code here. */
+.holder {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next row */
+    justify-content: space-between; /* Evenly spaces items with first and last items at the ends */
+    width: 100%; /* Ensure the holder takes the full width of the parent */
+    box-sizing: border-box; /* Ensure padding and borders are included in the element's total width and height */
+    padding: 10px; /* Optional: Add padding to the container */
+}
+
+.item {
+    flex: 1 1 auto; /* Items maintain their natural size and wrap if necessary */
+    min-width: 100px; /* Minimum width of each item */
+    margin: 10px; /* Adds space around each item */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    padding: 10px; /* Optional: adds padding inside each item */
+    border: 1px solid #000; /* Optional: adds border for better visibility */
+    text-align: center; /* Center text inside each item */
+}
